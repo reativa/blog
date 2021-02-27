@@ -1,0 +1,324 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.1d07f1255d05a1395a48.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.18.12"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2374911412821725'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+      </script><script>window.dataLayer = window.dataLayer || [];window.dataLayer.push({"platform":"plataforma-reativa"}); (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM-KZH8KWD');</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a4533d42454f73956ac7c2f680393b78"/><title data-react-helmet="true">Como fazer as empresas saírem no tapa por você | Reativa Tecnologia</title><meta data-react-helmet="true" name="description" content="Eu digo e repito para todos os alunos e mentorados da Reativa, de Júnior a Sênior que nos procuram: o RH sempre busca por provas sociais no seu perfil. Se você entender as bases por trás disso, você conseguirá emprego nas melhores empresas do mundo. Esse artigo é uma pequena parte de um capítulo do nosso curso. Com essas dicas nossos alunos conseguiram dobrar de salário em pouquíssimo tempo."/><meta data-react-helmet="true" property="og:title" content="Como fazer as empresas saírem no tapa por você"/><meta data-react-helmet="true" property="og:description" content="Eu digo e repito para todos os alunos e mentorados da Reativa, de Júnior a Sênior que nos procuram: o RH sempre busca por provas sociais no seu perfil. Se você entender as bases por trás disso, você conseguirá emprego nas melhores empresas do mundo. Esse artigo é uma pequena parte de um capítulo do nosso curso. Com essas dicas nossos alunos conseguiram dobrar de salário em pouquíssimo tempo."/><meta data-react-helmet="true" property="og:image" content="../assets/cover/empresas_tapa.png"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Reativa"/><meta data-react-helmet="true" name="twitter:title" content="Como fazer as empresas saírem no tapa por você"/><meta data-react-helmet="true" name="twitter:description" content="Eu digo e repito para todos os alunos e mentorados da Reativa, de Júnior a Sênior que nos procuram: o RH sempre busca por provas sociais no seu perfil. Se você entender as bases por trás disso, você conseguirá emprego nas melhores empresas do mundo. Esse artigo é uma pequena parte de um capítulo do nosso curso. Com essas dicas nossos alunos conseguiram dobrar de salário em pouquíssimo tempo."/><link as="script" rel="preload" href="/webpack-runtime-b210fad69d5bdcf9f091.js"/><link as="script" rel="preload" href="/styles-989bb08664f2608f37ec.js"/><link as="script" rel="preload" href="/netlify-identity-widget-71f3202b04975b5e224a.js"/><link as="script" rel="preload" href="/app-320a3e4b66b1132d097e.js"/><link as="script" rel="preload" href="/commons-687338892083191c755b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-d38956d7c90802b9085d.js"/><link as="fetch" rel="preload" href="/page-data/como-fazer-as-empresas-sairem-no-tapa-por-vc/page-data.json" crossorigin="anonymous"/></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZH8KWD" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Reativa Tecnologia</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Como fazer as empresas saírem no tapa por você</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">January 05, 2020</p></header><section><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a70ec57c01e7e4412e8778a866537887/9d22c/empresas_tapa.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAADjUlEQVQ4y4WU3U8bRxDA/d6/oM9963MrJW+N8tCXNArCvtu9O5+PpnbStOpDm6qKVIJEWkUiShBpHCBBFgkBhUKwirGNzfnOBjvCGKjBIiQGmkaKgpIYhwC2zx+3k92jqFFUNdJoNDu7v52dnZ21wVYAXs/BqwBUPGB89Za43yNVxQZbGhSTZNdLDIUYbrNy0qz8w1sehVSYgMFk3wNVF1RPguGxkV0f2btM6t9D4zSQbwC+BvItNM6ASYdOaEhgOplBdf3AqElguCzY+ImO/1oX02kUinCTUd4f4JaX0EoOhyNobg4nUzg0iai9+VScnsEzSVx8KUJdoWnazNJpgJbZeRTTcKfX0ePj2zscURWrOu71cX23uTvD/PU+rqvH8fCR6O3jBu/y2ZxAEbPssUHd/fSJnJhGqoYHh3k9juMJPBXD+YdCJoPTaWE+g2nATEZYWBBCET4yhehiikCdwnAqFBU7vfbL17gLHfa2i/Zbg/xEGF3xOrw3OH8AbWyIw/fQz7/a6RHOnrf7BrjO6/YRPw1+ygY1z/KSpGootyz8uYhTKazpOKYhyudyQiCIVleE4CTSEzR/gWYeVVE8gXRdhKrHVn7l/q0XtXfYYzpaygo3+7lLVx2+Af5GPzc7h7u6uY6r9otXWMKBMOq/w3d1OwJBfmBIYLCx49Z08fd7/OKi8GJTojn7x9HaI5Hmtp4XaBXGxlEwjF5uSvTmtTgKhFAyiRIJkZWKvRVTAVNiZaxZxTRlIAqAq7TjMkouVlhwEeOg1A3ZNCTTsEpFYevdSFB1kqrT0jj/4HhpF6UmjyxMf26UXWurCOqyWWGzltDFykFkarEx3VgubwtjgR9H/d5o5JeV+Nlk8IzW/+nqYhMt7H6A/4atg8nbBXS+vU0N+/PZscrzaDY9onUffpz+bH0VE0P+38hVp2nIKb1Z7fk4c+3Dqb4vQr3Hnvk+SPV8lE03Q+19MDPgy/mJw7O9hx7E2x7fb79wrumE4+jQMA/wdtqud2F2ciJv5MXE3U/uq+ey6dHC2khrq8wJR2/6mv+Fa8hqye/2YdqfosVLtN0qOyINPqM2BceU+PgxdfRIsdhSfEE7yVpQFWCvlWwPkde3Kexh2zBe2RdCtak8WRP2toVyyfX3hsSuukanWthDKP/Q2IqZhRgUJmzMRfl3vpiKGxoeYngINepME+b3sBg7l0hhitDPq/DHG8hpT8857pvfAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="empresas tapa"
+        title="empresas tapa"
+        src="/static/a70ec57c01e7e4412e8778a866537887/799d3/empresas_tapa.png"
+        srcset="/static/a70ec57c01e7e4412e8778a866537887/00d96/empresas_tapa.png 148w,
+/static/a70ec57c01e7e4412e8778a866537887/0b23c/empresas_tapa.png 295w,
+/static/a70ec57c01e7e4412e8778a866537887/799d3/empresas_tapa.png 590w,
+/static/a70ec57c01e7e4412e8778a866537887/2a3d6/empresas_tapa.png 885w,
+/static/a70ec57c01e7e4412e8778a866537887/9d22c/empresas_tapa.png 1080w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Nós já falamos que <a href="../empresas-desesperadas">as empresas estão desesperadas atrás de desenvolvedores</a>, se você não leu, leia. O fato exposto no post anterior demonstra a margem que se abriu para que possamos conseguir empregos melhores, dada a falta de programadores no mercado. Então hoje falaremos sobre dicas de como ser bem avaliado pelo RH no processo de seleção.</p>
+<p>Eu digo e repito para todos os alunos e mentorados da Reativa, de Júnior a Sênior que nos procuram: <strong>o RH sempre busca por provas sociais no seu perfil</strong>. Se você entender as bases por trás disso você vai conseguir emprego nas melhores empresas do mundo. Esse artigo é uma pequena parte de um capítulo do <a href="https://reativa.dev/">nosso curso</a>. Com essas dicas nossos alunos conseguiram dobrar de salário em pouquíssimo tempo.</p>
+<blockquote>
+<p>Provas sociais são evidências que demonstram que você tem o conhecimento prático das características da vaga que a empresa tem em aberto. </p>
+</blockquote>
+<p>Essas provas podem estar:</p>
+<ul>
+<li>Nas empresas que você trabalhou anteriormente.</li>
+<li>Nas conexões que você possui.</li>
+<li>Nos posts técnicos que você escreveu.</li>
+<li>Na mensagem de commit que você faz.</li>
+<li>Na forma como organiza os projetos no Github.</li>
+</ul>
+<p>Tudo vai ser motivo para te qualificar ou desqualificar para a vaga. Muitas vezes você é exatamente o candidato ideal, mas não se atentou a esses fatores e acabou perdendo a vaga. A análise inicial que o RH vai fazer de você é muito subjetiva, e será baseada nas informações que você coloca em seu perfil (no currículo ou Linkedin).</p>
+<p>Não tem como saber quem você é de verdade somente pelas informações do seu perfil, e é aí que você entra em posição de vantagem, porque você pode:</p>
+<blockquote>
+<p><strong>Aprender a se vender</strong>.</p>
+</blockquote>
+<p>Pense agora, o que te leva a uma decisão de compra? Na maioria das vezes, você compra um produto pelo <strong>marketing</strong>. A princípio você não sabe exatamente se o produto funciona bem, mas se tem imagens bonitas e um texto chamativo, esses vão ser os primeiros fatores que te levarão a comprar. No processo de contratação isso não é diferente.</p>
+<blockquote>
+<p>O marketing vende, mas o produto tem que ser bom. Se venda bem, mas <strong>NÃO MINTA JAMAIS</strong>.</p>
+</blockquote>
+<p>Já entrevistei dezenas de desenvolvedores, para vagas que variaram de estagiário a arquiteto de software sênior. Em dois minutos de conversa informal eu consigo identificar se a pessoa está mentindo. Seu <strong>corpo fala</strong> , sua <strong>história fala</strong> , suas <strong>contradições falam</strong>. O contrário também acontece, mesmo quando uma pessoa está falando tudo errado pelo nervosismo, ou tem dificuldades de conversar por ter perfis introspectivos, a gente consegue identificar se ela é potencial, se ela se esforça e se realmente quer melhorar. Foque em <strong>ser</strong> , e não em <strong>parecer</strong>.</p>
+<p>É a tecla que nós da <a href="http://reativa.dev/">Reativa</a> sempre batemos: Procure ser o desenvolvedor que <strong>estuda muito</strong>, que trabalha <strong>duro e sem preguiça</strong>, que programa muito, que verdadeiramente entrega valor para a comunidade, <strong>independente do seu nível</strong>. Não vai ser fácil, mas se você se tornar essa pessoa, até em uma conversa de bar qualquer um vai identificar que você é diferenciado.</p>
+<blockquote>
+<p>Sorte é a <strong>oportunidade</strong> aliada com a <strong>preparação</strong>. <strong>Esteja sempre preparado</strong>.</p>
+</blockquote>
+<p>A dica desse contexto é: vá a eventos, observe, converse com as pessoas, procure gerar valor para elas e <strong>uma hora vai dar bom</strong>.</p>
+<p>Tendo isso em mente, vamos começar a trabalhar no seu perfil com as dicas práticas. Eu recomendaria você começar a trabalhar todos os dias para criar provas sociais que demonstrem que você é muito melhor do que os outros candidatos. Mas como?</p>
+<ul>
+<li>Posts técnicos de snippets de código e dicas úteis no Linkedin.</li>
+<li>Posts em blog pessoal, Medium ou Linkedin sobre como você resolveu algum problema técnico imenso e detalhes com exemplos de código. (Escrever duas versões do post, uma em inglês e outra em português).</li>
+<li>Um Github com códigos que funcionem e que tenham integração contínua, testes unitários e readmes extremamente bem escritos.</li>
+<li>Programar em inglês e usar boas práticas no código do Github.</li>
+<li>Apagar os repositórios feios que você tem no seu Github (é melhor ter 3 bons do que 50 ruins).</li>
+<li>Interagir e contribuir com projetos existentes no Github.</li>
+<li>Mensagens de commit com o código bem separado e com mensagens muito descritivas e EM INGLÊS.</li>
+</ul>
+<p>Faça cadência de posts no Linkedin, comece a escrever como se você fosse um grande arquiteto de software, mas sempre com humildade, sempre respondendo as pessoas que comentarem e tentando ajudar verdadeiramente.</p>
+<p>Exemplo de post bom para o Linkedin:</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 545px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/038c83bde47a194b37e3e0f9769a7046/3af27/exemplo1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 67.1559633027523%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAIAAAAmMtkJAAAACXBIWXMAAAsSAAALEgHS3X78AAABtklEQVQoz5VSWY6cMBDl/keIcoucYpJJNB+hm82saRu8YrANDUpPHrSUvyiawhTlopZXS2RH/enL5x/1mxpk13VN084g58BCCM458LAs02QhO++stcuyvJ8Uee85H+hA+76njEHWWmljlFJaKc45BC641tocP7SQUghBKUWoCHGtnZAIsacJgju4w3VC8nEc/wpQ2pOg2ff98XhE0KZpWpCiLMu6riBUVdV1bVEUpCR1XWdp2jRNnueEQEEqmDXNaMy6rpExJk2uWQabFFpSPKPUSZLkRXG6ZUcgQvC2bXs4VxX+SqkiQEcNKAxI3j9I0bIEeEqlgB8tARecoytoF1qDz3C2EBpUDgeU+jj54WyMjuNLHMcABp6fhOqKPE+SKwjXNMGToZbb7QaYjLFnoCh4j1TIJKXEqNb1/gHYIXjG+qHHGTBBDBbSjVIuRH+OvR94w+aSul55FAID2GPAhzOGBpBoYNvWWLC2a+qKMEa37Y79wW7hzH6b/e7XHbsFNx/Cs7vHkmAFjA1m3pS94wx6AV+33/+HPYjx7frr+5W/Jvrlp/h2VV8v8uUi4wo7tZ3t/afzHxRv1bGNMpnfAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="exemplo1"
+        title="exemplo1"
+        src="/static/038c83bde47a194b37e3e0f9769a7046/3af27/exemplo1.png"
+        srcset="/static/038c83bde47a194b37e3e0f9769a7046/00d96/exemplo1.png 148w,
+/static/038c83bde47a194b37e3e0f9769a7046/0b23c/exemplo1.png 295w,
+/static/038c83bde47a194b37e3e0f9769a7046/3af27/exemplo1.png 545w"
+        sizes="(max-width: 545px) 100vw, 545px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Isso gera prova social, mostra que você se esforçou, mostra que você entende de Github, que você contribui com conhecimento para os outros DEVS. Na hora da avaliação, isso faz com que o seu salário suba, pois você será avaliado como um DEV mais avançado, por mais que você seja Júnior.</p>
+<p>Provas sociais do post:</p>
+<ul>
+<li>Usa Github (tem experiência).</li>
+<li>Já passou por muitas etapas para conseguir chegar até o resultado que ele postou (experiência).</li>
+<li>Fez o curso online e terminou os exercício (provou ter prestado atenção no curso e que é autodidata).</li>
+</ul>
+<p>Outro exemplo:</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 533px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c816d5d6408cdddd5db334af51ae8a2f/51e5c/exemplo2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 68.85553470919325%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABX0lEQVQoz5WSS07DMBCGc1kkbtBDsEfiBIgVK4QqBGxgBWXTqhKqiPOyY+fhJLbjOC8HNymLSlRtf1nW2JpvZuwZK8T48mI2f3xN0thx3aLIKc3yPKdpavZe6+GwrLZtJ8v4dV13wE3rKYreaQczxgAArut6ngscEMBw/RMtN2RtJ47jAmBDiOI4hkGQpCkhGBOMEIpGy+KcIwTJKGhuowgiDCH2YeiZeI7DGO/73hTY/WlrjierqRVnjNLErCwrkiTBGEsphxNkVZUqmMhyVjAuKynLUgihVK33n/c/TAu5tIuVnXvkpGx7cMGrb49tfOaEoun0ebAoVZw3hCqAOMmq82Clth/W1PW2i7s+9vo0WapSvh9wUU4jYIbljMxN227C9G39I5USn/P45XYQVI+RjsOlUvfvHzcPzwHy1d1VeD0bvNUIHy/BMvNiE7Kw7cZ4b776xdPQ1tM8H4V/ATgZKAr8VH1VAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="exemplo2"
+        title="exemplo2"
+        src="/static/c816d5d6408cdddd5db334af51ae8a2f/51e5c/exemplo2.png"
+        srcset="/static/c816d5d6408cdddd5db334af51ae8a2f/00d96/exemplo2.png 148w,
+/static/c816d5d6408cdddd5db334af51ae8a2f/0b23c/exemplo2.png 295w,
+/static/c816d5d6408cdddd5db334af51ae8a2f/51e5c/exemplo2.png 533w"
+        sizes="(max-width: 533px) 100vw, 533px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Demonstra que ele gosta de lógica de programação e dá a entender que programação é uma diversão na vida dele. Eu particularmente quando contrato desenvolvedores gosto de perceber que ele gosta MUITO do que faz, isso vai fazer com que ele não surte quando tiver problemas complexos do trabalho para resolver.</p>
+<p>Outro exemplo:</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 558px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/1fe995c3d5edf498b2c20928ee397d39/f4410/exemplo3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 80.64516129032259%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAIAAACZeshMAAAACXBIWXMAAAsSAAALEgHS3X78AAADiUlEQVQoz3WSWU8bVxTH5xNUqRCRS0wd4m08Hm/j3WOP7TEECCAaNVGDolRpIambpE7atOpLH/oF2sdWfaz6FDDYcUUURd1EE4JRG8PgpSSxiqFge2zPDB6veJleh4c+9eivo6Oj89NZ7oWOWu0fvvt27cnvpRKzv3/A83yFL5f5npXLZY7jWJY9DhiG5VjuOFOr1wVBgGrV6qssk89ls9kDlmVoukDnaZou5ukiKAZFXWDHviu8CoVOp9Nut6F6o5EvVbJFfi/HHVZq7Vaz2Wx0uy2heyQILYAI/2/Q9osilSrFEqX1P+nYZmEnw79Ml1fXCg9/yf4aLfz44EloMXz//vJiMLwwvxReioSWIuFQJLgQCs6HoT/Wn798nk4mX8SeJVafbjyNUqtR6t7C+ldf//zN99FzkwGpGDGqicEBlahPLhYhAycVA/0yUd8Zcb8cClwJeKxeo8XnIiZGxy56yWmPd/qt8zMX3740O3trZua2SmrGNWcxg0+n8erVpBYhNCocyKz3QaHIT/eCi8sPHl33f+By2CanJs5NjY9PjpMj3iuzcxfeuaMYwkBnTEVoVU6dCpBOILXSjipt0M4u3WzUwPaBjz98U/y6zanRG+QqVCKRnfSNOi/P3JIPmdRKm1U7YrGP2DGfDnHrEC+qxBGFBUpncjx/2IM/uSE6dWLYZ3HYtXLloPh0/8QUef39wNCgQY/gJjWphnFUhaOwE4VxRGlDFFaIZqrtFngV4fbdG4PiPh9ptdg1qO7MKUnf2PTo1dnPpBJMD+N2vc+EkZjaA0hU6QBj92CmciR0OwC+8+lN0cBrhNPgcGNGI/yG+MTZKfK92bsyiQmF7RbMNzF2ATeOoGBbuKceHHm0EpxfWF5+eM3vdztdhMftcrvIYa/NYbs6B072kUxiBqVGhLBiw5japZJbAHYsaI3ajkajKyuPYxubiWSK2tyKUYnf1p9R8UQmS78797lMgqEK0JkkXONmnVenwv+D2Vpb6ICtm416vV6rNWt18OnbnU66yOaanWv+L4bEejCqBfUQjjGXdRRDnEqpCZaaYZkZ2itV8iVuj2bz7CHNHu4XmGyJYzh+5a+/KZr33/xSetpgQQkDjMMKiwaxaxAb8DrUoUXs0G6x9jidSf+zky1Xc3x1l+H2ucpBucFUW0ytu53ObFHxjQ2gLWoznkykUqntRCIVjye3qMS/CsQQbew55IQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="exemplo3"
+        title="exemplo3"
+        src="/static/1fe995c3d5edf498b2c20928ee397d39/f4410/exemplo3.png"
+        srcset="/static/1fe995c3d5edf498b2c20928ee397d39/00d96/exemplo3.png 148w,
+/static/1fe995c3d5edf498b2c20928ee397d39/0b23c/exemplo3.png 295w,
+/static/1fe995c3d5edf498b2c20928ee397d39/f4410/exemplo3.png 558w"
+        sizes="(max-width: 558px) 100vw, 558px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Nós podemos ver que o perfil dela é de auxiliar de escritório e que ela está aprendendo programação, demonstrando que é esforçada e muitas vezes só isso já é suficiente para o RH te querer. Às vezes eles vão aceitar te contratar pelo seu potencial e não pela sua capacidade técnica atual.</p>
+<p>Só nessa imagem vimos que ela usou a Udemy, ou seja, ela <strong>investiu dinheiro do próprio bolso</strong> para pagar um curso, demonstrando que é <strong>EXTREMAMENTE INTERESSADA</strong>. Outro ponto é que ela usa Visual Code, então ela <strong>já passou por diversas etapas</strong> até chegar naquele resultado.</p>
+<p>Provas Sociais:</p>
+<ul>
+<li>Usou dinheiro do bolso para investir num curso (interessada).</li>
+<li>Apesar de outra profissão, está aprendendo programação (interessada).</li>
+<li>Usou VS Code (tem experiência).</li>
+<li>Postou no Linkedin (é aberta a crítica, tem coragem de demonstrar publicamente e ser criticada).</li>
+</ul>
+<p>Próximo Exemplo:</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 542px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/233dff801e1cb1ca8166f1f74b31c14c/b4155/exemplo4.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.239852398523986%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAA9UlEQVQY042OaZaDIBCEvf/x5pe4ACqLgSTq0OAC0bR6gJkPXr8qqmnIQoCGVgBeK2WtTTEty7Ku63auDfW2bac9yxpjvO2lUxZCUEpxzpRWlNGqLFETUuAuL+qqapqGEMI4a9uW0ppxXhRkGEa87NHfPIz14QQcjNPkwSPTNC3zghUjrOM4YINzvymlDMCRPC+r+4VWCEEvpBQc/0AZnuBcxqix9vl8Ka2llJ0QIczZPM/oEYOhsRioC2OM1r3Wqu/7rmvf7+Hz2dNF8B4tAGTOx84uzWOuBECIx3Hs+/FPspeLPzyfZO0cOOeG4Rx5jfgD7PkCuL2Ie6NT9VkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="exemplo4"
+        title="exemplo4"
+        src="/static/233dff801e1cb1ca8166f1f74b31c14c/b4155/exemplo4.png"
+        srcset="/static/233dff801e1cb1ca8166f1f74b31c14c/00d96/exemplo4.png 148w,
+/static/233dff801e1cb1ca8166f1f74b31c14c/0b23c/exemplo4.png 295w,
+/static/233dff801e1cb1ca8166f1f74b31c14c/b4155/exemplo4.png 542w"
+        sizes="(max-width: 542px) 100vw, 542px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Começou o post fazendo uma crítica, que dá a entender que ele já passou por diversas situações e está alertando outras pessoas a não fazerem o mesmo.</p>
+<p>O ponto positivo é que ele está <strong>preocupado</strong> com a forma como as pessoas se comportam e que você melhore com o erro dos outros. O lado negativo é que você pode ser <strong>interpretado como reclamão</strong> e que só está criticando os outros para mostrar que você é melhor que eles.</p>
+<p>A diferença do veneno e do remédio é a quantidade, então o segredo é saber <strong>dosar</strong> e abusar do <strong>bom senso</strong>.</p>
+<p>Nesse caso o rapaz tinha autoridade para falar, porque já tinha um cargo alto em uma empresa, o que faz com que as pessoas acabem respeitando a primeira vista. No caso de um junior tomar a mesma posição, ele teria que utilizar outra forma de comunicação, como por exemplo:</p>
+<blockquote>
+<p>“Eu sou muito observador, e o fato de eu ainda ocupar uma posição de júnior me faz querer aprender com o comportamento dos devs mais experientes.</p>
+<p>Reparei que existem muitos bons exemplos de inspiração, mas também vejo muita gente que estagnou na carreira, o que eu não busco jamais para a minha forma de trabalhar.</p>
+<p>Criei uma lista do que eu aprendi e do que eu busco evitar, de forma com que eu cresça mais rápido na minha carreira. Meu objetivo é o de deixar claro o que eu não devo fazer, não sendo um ataque pessoal a ninguém. Então vamos a lista dos erros a evitar:</p>
+<p>1- Vaidade, por achar que o código dele é sempre o melhor, e não aceitar críticas ou code reviews.
+[…]”</p>
+</blockquote>
+<p>Dessa forma eu deixaria muito bem exemplificado e muito explícito de que eu sou muito humilde e que busco melhorar sempre.</p>
+<p>Lembre-se: <strong>tudo é prova social</strong>. Fazer isso gera engajamento, e engajamento gera visualização tanto de outros devs quanto de RH, o que pode gerar contatos para você.</p>
+<p>Uma dica adicional seria de no fim do post você colocar:</p>
+<blockquote>
+<p>“O que você acha que faltou nessa lista?
+Ps: Se alguém quiser tomar um café para falarmos sobre possíveis oportunidades para programador Júnior, me chame no privado, estou em busca de recolocação para posições em React e NodeJS. Tenho disponibilidade para mudança de cidade.”</p>
+</blockquote>
+<p>Repare:</p>
+<ul>
+<li>Primeiro você gerou valor gratuitamente.</li>
+<li>Provou ter passado por muitas situações.</li>
+<li>É decidido sobre onde quer chegar na carreira.</li>
+<li>Sabe escrever e não tem vergonha de se expôr.</li>
+<li>É organizado e focado em melhorar</li>
+<li>Tem experiência de vida e ainda está disponível?
+QUERO ESSE DEV AGORA NA MINHA EQUIPE!</li>
+</ul>
+<p>Mesmo em caso de você não ter experiência, as pessoas vão te dar uma chance, pois você prova que o que está dizendo é verdade através da geração de valor, das dicas para os outros devs, e que você não só está preocupado com a sua mudança, mas a de possíveis outras pessoas.</p>
+<p><strong>DICA PARA QUEM ESTÁ COMEÇANDO</strong>: Empresas contratam potenciais, porque eles <strong>são baratos</strong> e é muito difícil encontrar <strong>gente esperta</strong>. Criando esse tipo de post do exemplo, você demonstra <strong>criatividade</strong> e não se coloca em posição de vítima só esperando pela “recolocação cair no seu colo”.</p>
+<p>Pra quem não sabe o que quer, qualquer lugar serve. Mas os devs que querem estar em primeiro lugar, estão com a mentoria da Reativa.</p>
+<p>Nossos conteúdos são focados em conhecimentos práticos da vida real de um programador, através deles, ajudamos você a impulsionar a sua carreira e te levar de Dev Junior a Sênior no menor tempo o possível. Esse post foi só uma pequena pílula do que a Reativa oferece. Depoimentos dos nossos mentorados:</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 405px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4bdd06474a0b17ad3d5e0728c717cd6e/2a118/depoimento1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 143.20987654320987%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAIAAAAl5NuSAAAACXBIWXMAAAsSAAALEgHS3X78AAACa0lEQVQ4y42U2ZaaUBBF/ed8Uh6Tt+QhK1/QawmOKJOKCgJOSxFwwiG7qZZ0p0VzHspS77lVdarqVo7Z1Wr9Nhu/1lHiOINwOvN9z3PdIAgv1/vYbDbT6RSncsiu2st37eVbFKW2bbkecIeO4wfhe8Ilx/l8xl+tVq7rvpL5iY/9/hDHcbpNkyThP2wSx9F6vVgsCLLb7YQpKC6qyK2j0dA0zX5/4DiOYRhY27Z7vZ6maWRyOp0kxj94I3NiOBxyGis+V4zHY67AZll2t/iKfEwmEzgEhDYajfr9Pg403/e3262kWkrmEKHgQ6PCww3H47EQrDRt7uYc9nOGIk9p2vx3eIddjv1+T8JIVRb2Q82oVdSMM8gxn88f8N/6DFnXdWGKYHSOSYBP/CdkpOp2u0VYy7Jg8hV/uVyWlV253NImMoJDJhol0GEcyAxcKfnn1y9o5HkTKwcE1CLVNE1FtketMtUfp1NGn+Rocfp/ULn7K2HXN6xyFD77yArRURHs/JnMwKmq2mq12u12o9HA1ut1LQe6sGdsXWnkMAwhV6tVOC1BW1MVpZYDdUmtlExkDkHGqrWaoWtmRzEMk7C0kPzJvJTMYKE8fWLPLbvnjQfRtBsnWwqOoojKUbeUzHrISt0svTjSPxn7Yubvk5Gkm4NRYU7z+dHx9RxkLjP7RDDkRSxko/hOp4NU/EVRj9QOggAyBMg4iqLApGEy808Eg0y0ZrPZuQEmYXlMCcuqPIqMYMV7UOgkwyv+X8EYem6i72JJKckBrezd/PAMsYkMAG8AkpIkzmw2I8niJXj0etJ9jhJNFkCm7+kb+AesPWwPJIQfnwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="depoimento1"
+        title="depoimento1"
+        src="/static/4bdd06474a0b17ad3d5e0728c717cd6e/2a118/depoimento1.png"
+        srcset="/static/4bdd06474a0b17ad3d5e0728c717cd6e/00d96/depoimento1.png 148w,
+/static/4bdd06474a0b17ad3d5e0728c717cd6e/0b23c/depoimento1.png 295w,
+/static/4bdd06474a0b17ad3d5e0728c717cd6e/2a118/depoimento1.png 405w"
+        sizes="(max-width: 405px) 100vw, 405px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>O <a href="https://www.linkedin.com/in/mateus-passos-amaral/">Mateus</a>, é desenvolvedor júnior que busca recolocação e está no processo de mentoria.</p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 412px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/d1b637092d3b7abe5738498769842117/f5bbb/depoimento2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 33.00970873786408%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAIAAACHqfpvAAAACXBIWXMAAAsSAAALEgHS3X78AAAA30lEQVQY03WQ3UrEMBCF8/Je+QKC4LV3XvgAPoC7vbHbhYrFdiXkv3ZtE2syzU6sBZXtBxkGkpw5c4j3Xgm+3zzaoZdSMC6sdTFGAJgWfvcI3rZt23Udcc6V+/z68oIzWhRFvtspZebPMb2bvut/mqahlJK4zjwFD6xAHu7vJKXWfTLGtNaoxzkXQnAh+3fxoV6Psg5+PCtNbm+u6pfnACClxE2w6oRS2gxHPZi33hwgfJ21RtYMQwjeBw+Y1jSOo8UY/5Jsz0n+bLiEmVIsyzzxlGXbqqowW/RjFrBHuRMUqpCJm7pjQQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="depoimento2"
+        title="depoimento2"
+        src="/static/d1b637092d3b7abe5738498769842117/f5bbb/depoimento2.png"
+        srcset="/static/d1b637092d3b7abe5738498769842117/00d96/depoimento2.png 148w,
+/static/d1b637092d3b7abe5738498769842117/0b23c/depoimento2.png 295w,
+/static/d1b637092d3b7abe5738498769842117/f5bbb/depoimento2.png 412w"
+        sizes="(max-width: 412px) 100vw, 412px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>O <a href="https://www.linkedin.com/in/alexandrefeio/">Alexandre</a> é desenvolvedor pleno em transição para sênior, e também está no processo de mentoria.</p>
+<p>Desejamos todo o sucesso do mundo para todos vocês.</p>
+<p>Qual conteúdo vocês gostariam de ver aqui na Reativa? Gostou? Não gostou? Sua opinião importa muito, comente! Não se esqueça de marcar os amigos que precisam de ajuda na recolocação, e somente marcando eles nesse post e compartilhando você poderá ajudar outras pessoas.</p>
+<p>Acompanhe a Reativa nas redes sociais:</p>
+<p><a href="https://www.instagram.com/reativatecnologia">Instagram</a> - <a href="https://www.facebook.com/reativaschool">Facebook</a> - <a href="http://reativa.dev/">Site</a> - <a href="http://blog.reativa.dev/">Blog</a>.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAACwUlEQVQ4y42UWU8UQRDHefFjGL+Arz6aKIlHMOFNXiSBqFEw0ZiIbtCAIYTIIYeGQ1dwOeKycigQD1DX5QwJEoSNirLdPdPbMz3dM73LqfFNaxjDrhiBpDLpY37dVf+q6gxKyM6mx4i2af9uZeyEIWKa2FlB9jKCr2FgHe8NBtISeH6UhnxWoFB2+0R0knKBYX1HGLuucguHHxt3j6mX98yxIBuq5jAeDzLOU/x2GGIj3wiL4+iUXpWpYlEtsY6cZaTW0OcZvTpTLc5qjBHP/xQMc8DgYIMRiLC/zBqo4M4qwova3FtKNaLWUc8ta6iGS4X1WBoMJFhyA828iFcdSUTaje4b1vuAYUn3rECBbDsvl3+ikWYz5BN2AmkpGJO45k4GK83qoyroE71l1mgn67oqkt8R/kqEg1vPyoE7PFhkjTQbMPXCzvCuNQziz7P9efLTtP4xTOtPKRjUgELdDKKN6/ADrjycqDup4hr27nNhLyVTfaz1nNz4FYNoQef+Mg5SQ7T1WarrioCBWkXPynlfqQXibRWMC4MbIy1mQ7YKB9jzCt5bakFVRNrZu0eGwfDTYqvljC0TaLTT6LwshIP0FIwJo+TLB32wivfctK4dWJnqZYEC0Zxjh9sM2IVU+fPlRIhND7D2QilV2s1e9YKqkz2s8bTzutF802KCvCAVhKNtbkU6WG8Jf3Xf7LvNZeJvGCbgecclWXIwGbgoyw8lF8YpKESWiAdDYYHDTTmOt75V4X/yDKnSlsjsMJ0L09rjCtQCxost+QMBeX3/CpSHsHF6e6WKBPIBANQGpHq4yRQKw4qGSKjYurBvLVgkIAvpXbG9POHUphy7Idvx59sPc+0HuXZdlqo9ocaeMCDhIPrfloTLqcvPR+jCGI1O6NFxHdoAZIOuhrLf5TFwldCIaeAtY3G3sbe9AXt6SXa133dG1a0ljAUNAAAAAElFTkSuQmCC" alt="Reativa" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/d2742f2dddd737dec60ee2a5226edb06/000d3/icon.png 1x,
+/static/d2742f2dddd737dec60ee2a5226edb06/bc2a0/icon.png 1.5x,
+/static/d2742f2dddd737dec60ee2a5226edb06/89cf4/icon.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/d2742f2dddd737dec60ee2a5226edb06/000d3/icon.png 1x,
+/static/d2742f2dddd737dec60ee2a5226edb06/bc2a0/icon.png 1.5x,
+/static/d2742f2dddd737dec60ee2a5226edb06/89cf4/icon.png 2x" src="/static/d2742f2dddd737dec60ee2a5226edb06/000d3/icon.png" alt="Reativa" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p><strong>Se você quiser dar o proximo passo para ser um dev profissional, eu posso te mentorar!</strong> <!-- --> <a href="http://bit.ly/mentoria-pauloluan" target="_blank" rel="noopener noreferrer">é só você clicar aqui.</a> </p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/como-ganhar-10mil-por-mes/">← <!-- -->Como ganhar R$ 10 mil por mês</a></li><li><a rel="next" href="/como-eu-consegui-dois-empregos-com-1post/">Como eu consegui dois empregos de programador com este post<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2021<!-- -->, Sua melhor escolha para aprender programação:<!-- --> <a href="https://reativa.dev">Reativa Tecnologia</a></footer></div></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-155080700-5', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/como-fazer-as-empresas-sairem-no-tapa-por-vc/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-320a3e4b66b1132d097e.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-d38956d7c90802b9085d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ba8fab707f547b8d2140.js"],"component---src-pages-index-js":["/component---src-pages-index-js-511e09b2f0f1386b8494.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-d38956d7c90802b9085d.js" async=""></script><script src="/commons-687338892083191c755b.js" async=""></script><script src="/app-320a3e4b66b1132d097e.js" async=""></script><script src="/netlify-identity-widget-71f3202b04975b5e224a.js" async=""></script><script src="/styles-989bb08664f2608f37ec.js" async=""></script><script src="/webpack-runtime-b210fad69d5bdcf9f091.js" async=""></script></body></html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.1d07f1255d05a1395a48.css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-191cc9f50f3b76b9617cb383f19acb7d.woff2) format("woff2"),url(/static/montserrat-latin-100-370318464551d5f25b0f0a78f374faac.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-bdeaeb79db315697bd173a55b097dc18.woff2) format("woff2"),url(/static/montserrat-latin-100italic-ecf7d49386e8f265878e735db34a7c4b.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-85d5ef9db7f2dc6979172a4a3b2c57cb.woff2) format("woff2"),url(/static/montserrat-latin-200-1fc98e126a3d152549240e6244d7e669.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-49095760a498d024fe1a85a078850df9.woff2) format("woff2"),url(/static/montserrat-latin-200italic-fe46cf8b9462c820457d3bf537e4057f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-7c3daf12b706645b5d3710f863a4da04.woff2) format("woff2"),url(/static/montserrat-latin-300-8dc95fab9cf98d02ca8d76e97d3dff60.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-f20b178ca2024a5eac8e42e6649db86c.woff2) format("woff2"),url(/static/montserrat-latin-300italic-3fe16939288856e8e828fa2661bf2354.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-bc3aa95dca08f5fee5291e34959c27bc.woff2) format("woff2"),url(/static/montserrat-latin-400-8102c4838f9e3d08dad644290a9cb701.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-5cad650422a7184467af5a4d17b264c4.woff2) format("woff2"),url(/static/montserrat-latin-400italic-d191f22af3bb50902b99ac577f81a322.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-92d16e458625f4d2c8940f6bdca0ff09.woff2) format("woff2"),url(/static/montserrat-latin-500-8b763220218ffc11c57c84ddb80e7b26.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-47bfcca6b69d6a9acca7a8bff17193e2.woff2) format("woff2"),url(/static/montserrat-latin-500italic-72c01f753c3940c0b9cb6bf2389caddf.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-6fb1b5623e528e27c18658fecf5ee0ee.woff2) format("woff2"),url(/static/montserrat-latin-600-7c839d15a6f54e7025ba8c0c4b333e8f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-60789af1c9338ed1a9546722ec54b4f7.woff2) format("woff2"),url(/static/montserrat-latin-600italic-f3d4de8d0afb19e777c79032ce828e3d.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-39d93cf678c740f9f6b2b1cfde34bee3.woff2) format("woff2"),url(/static/montserrat-latin-700-80f10bd382f0df1cd650fec59f3c9394.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-ba136d97b14e82284dd595e257f11c47.woff2) format("woff2"),url(/static/montserrat-latin-700italic-8c98142b425630821139c24bd1698700.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-b7018be9ed6cd94da8b6675b3a468c3b.woff2) format("woff2"),url(/static/montserrat-latin-800-9a9befcf50d64f9d2d19d8b1d1984add.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-540ffdd223d1a9ad3d4e678e1a23372e.woff2) format("woff2"),url(/static/montserrat-latin-800italic-897086f99f4e1f45e6b1e9368527d0bc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-58cd789700850375b834e8b6776002eb.woff2) format("woff2"),url(/static/montserrat-latin-900-26d42c9428780e545a540bbb50c84bce.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-451157bc8861fe54f523b3669a3def71.woff2) format("woff2"),url(/static/montserrat-latin-900italic-a8ec4957e1c24f5793305763ad9845b3.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}code[class*=language-],pre[class*=language-]{color:#f8f8f2;background:none;text-shadow:0 1px rgba(0,0,0,.3);font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto;border-radius:.3em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#272822}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#f8f8f2}.namespace{opacity:.7}.token.constant,.token.deleted,.token.property,.token.symbol,.token.tag{color:#f92672}.token.boolean,.token.number{color:#ae81ff}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#a6e22e}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url,.token.variable{color:#f8f8f2}.token.atrule,.token.attr-value,.token.class-name,.token.function{color:#e6db74}.token.keyword{color:#66d9ef}.token.important,.token.regex{color:#fd971f}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style><meta name="generator" content="Gatsby 2.18.12"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style type="text/css">.gatsby-resp-image-image{width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;color:transparent;}</style><link rel="preconnect dns-prefetch" href="https://www.google-analytics.com"/><script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2374911412821725'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+      </script><script>window.dataLayer = window.dataLayer || [];window.dataLayer.push({"platform":"plataforma-reativa"}); (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer', 'GTM-KZH8KWD');</script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/icons/icon-48x48.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=a4533d42454f73956ac7c2f680393b78"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=a4533d42454f73956ac7c2f680393b78"/><title data-react-helmet="true">Faculdade de TI é perda de tempo | Reativa Tecnologia</title><meta data-react-helmet="true" name="description" content="Todo mundo imagina que uma carreira se inicia num curso superior, é o pensamento padrão. Mas na área de programação é diferente, estamos num momento que as empresas estão completamente desesperadas atrás de bons programadores, e elas não os encontram."/><meta data-react-helmet="true" property="og:title" content="Faculdade de TI é perda de tempo"/><meta data-react-helmet="true" property="og:description" content="Todo mundo imagina que uma carreira se inicia num curso superior, é o pensamento padrão. Mas na área de programação é diferente, estamos num momento que as empresas estão completamente desesperadas atrás de bons programadores, e elas não os encontram."/><meta data-react-helmet="true" property="og:image" content="../assets/cover/devo_fazer_faculdade_1.png"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="Reativa"/><meta data-react-helmet="true" name="twitter:title" content="Faculdade de TI é perda de tempo"/><meta data-react-helmet="true" name="twitter:description" content="Todo mundo imagina que uma carreira se inicia num curso superior, é o pensamento padrão. Mas na área de programação é diferente, estamos num momento que as empresas estão completamente desesperadas atrás de bons programadores, e elas não os encontram."/><link as="script" rel="preload" href="/webpack-runtime-b210fad69d5bdcf9f091.js"/><link as="script" rel="preload" href="/styles-989bb08664f2608f37ec.js"/><link as="script" rel="preload" href="/netlify-identity-widget-71f3202b04975b5e224a.js"/><link as="script" rel="preload" href="/app-320a3e4b66b1132d097e.js"/><link as="script" rel="preload" href="/commons-687338892083191c755b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-d38956d7c90802b9085d.js"/><link as="fetch" rel="preload" href="/page-data/devo-fazer-faculdade-parte1/page-data.json" crossorigin="anonymous"/></head><body><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZH8KWD" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header><h3 style="font-family:Montserrat, sans-serif;margin-top:0"><a style="box-shadow:none;text-decoration:none;color:inherit" href="/">Reativa Tecnologia</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">Faculdade de TI é perda de tempo</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">January 03, 2020</p></header><section><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/dfdccb0ef4a315bae78b21a4d1019f3d/4362d/devo_fazer_faculdade_1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 83.82978723404257%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAC50lEQVQ4y21UWUtyURS9P8SyzCbNBiubqYyCBsmMsB6aqJ6siGiggV6Khge1gigNMYhsgJ4kIgryIehnrY+14PT58fWwOfeec+7aa6+99rXKysrwWxQWFir4XFlZqTD7drsdFRUVKC8v1x5X82z9BsbL4XAY+/v7OD09xeXlJa6urhCLxbC7u4vh4WGUlpbqLteSkhIUFRXp2coHcblcOuAHmUwGKysrOD8/x/PzM1ZXV7G0tITHx0clqa6uRlVVldbW1lYMDg6iqanpX4amLK/Xi6mpKXR3dyMYDOLi4gLz8/OYnZ1VjIyMKLnH40FfXx8WFhYwNjaGmpqav4BOpxN1dXWor6/XQTweRzabFZu1tTWBfn194ePjA4eHhyqTJfb29mJ0dFTfUMf/GBK4q6sLn5+fyOVyiEajYpdMJgX2/f2Nu7u7nyawzOnpaQE7HA5YpkPMxpWbLS0teH19xfX1tdhtbW2pGZubm9rb2dmBzWZTcrfbjebmZpU+MDAAq7i4GAzqYTpH+v39/SpzY2NDelF86sdyl5eXsbi4qGTr6+tKwGDTrEAgIA3IikAFBQWora0VWwKQFTvP/UgkIvHZVTLq6OhQMr4Tp6GhAdbe3h4SiQTa2towPj4Ov98vdrQBE2xvbysIPjc3p/JoF1qLbmDJR0dHSKVS0t5qb28XALNMTk7+lMMS0um0fMikNDWNThfQDQQiIzIlO5/Pp2QWDU19+ELfkSGBzYTc3t4q+/39Pd7e3tR1ik/27OzMzAwaGxulP7EstpyWuLm5kS3e399lk6GhIel1cnKC4+NjxcHBgSaIzWJVPT09kobVUQY21qLLn56e8PDwgJeXF5ydnemQ3aaubFgoFNJsT0xMaCqoJ8s2A5HvY4vCdnZ2KjhSLNsc8oxSMFgWnUCtqCPZsESu1JMk9HNgBhMcJzPPtA0vUl+GYcGPGCYBPUy2DAGaSWHk/+MMKPfM3yh/qsjIsDKEeO8PYRp/pqMJbqwAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="devo fazer faculdade 1"
+        title="devo fazer faculdade 1"
+        src="/static/dfdccb0ef4a315bae78b21a4d1019f3d/799d3/devo_fazer_faculdade_1.png"
+        srcset="/static/dfdccb0ef4a315bae78b21a4d1019f3d/00d96/devo_fazer_faculdade_1.png 148w,
+/static/dfdccb0ef4a315bae78b21a4d1019f3d/0b23c/devo_fazer_faculdade_1.png 295w,
+/static/dfdccb0ef4a315bae78b21a4d1019f3d/799d3/devo_fazer_faculdade_1.png 590w,
+/static/dfdccb0ef4a315bae78b21a4d1019f3d/2a3d6/devo_fazer_faculdade_1.png 885w,
+/static/dfdccb0ef4a315bae78b21a4d1019f3d/4362d/devo_fazer_faculdade_1.png 940w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Você se sente perdido? Ansioso? A faculdade parece que não te formou direito? As vagas exigem milhares de coisas e você se sente um bosta? </p>
+<p><strong>Eu tenho a solução!</strong></p>
+<p>É só você clicar na imagem abaixo (<a href="https://bit.ly/guia-dev-autodidata">ou aqui</a>) e me pagar uma Pizza de Mussarela 🍕 eu te mostrarei um caminho organizado e 100% a prova de desculpas para você se tornar o melhor dev do mercado:</p>
+<p><a href="https://bit.ly/guia-dev-autodidata"><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 101.13402061855669%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAAEt0lEQVQ4yx3LaWxaBQAA4Jf4118mxsRkyWbd5mZcl6VdW0pvoKzAOB5HueGNx/UepfB4HI8bCrxSoEAp7ShtV9farUCv1aVdV3bZuajZoibG6A81MctMTEyMGp3Z8Pjz/fuAJgBrAhxv/e+JV9ynX/U1vxZoeTPcdjRGOU72nc3QOgr0rqkh2hSHVeAJCnxJySRNEEpHCHIA1DfivUfCjJN++kkv8z0fr8MHdnkVg14h3XvsqFqvmxsP192evVj6ARHbwaIbBLmdD+S90U13fB+QsnQqAawR6tQgpOJrlTztv+pEehlX33yKHbEkU4FVh7NGjO16wjXf2AYRqgS9ZU9glQitAfIhk5pr1vAQLQ9Rc00Q36wXIEYhouGZRVzE4yykJu4io1W7b8szdsOX2Iwkd5KZjYlMlczdBFRsBOKadVwEBq2I0GYBrSaxzSweNYntrWcVfT3WJHmQxndWsZtXgx9OxneC5GY4vhmK1oKRKiCnWfSCEaPIjoD2LIxFEAcGOXwmjMQdrIHh3h55caaWSNyYTd24QpaLtmWfvmLGr6HEmi1QAfjtmKTbp+fbIwrbmGWUdGEkNloMji7EHW6DQi3gb88XtgqlzenZSn6yQub3XYX7kZnDxMLj0CKAcs1LY9KvblHvrlD3Fns2CgMfV6l7pa5nB33bSXo1wCqjnKdLwoJCVFbKr2k05JDyRdz/wj/2N54GPt+iNX5pajw7mfdQJuwUQkOdj7bpL/Z+u9UZu0QzDw4RAvaTvFBD4aXE0pJSnePCjVzsj/D4c28WWM8xXv5w5tdvTsUslDTennV3rGZbQ0bqd7uUspt+xcna8IFfTMmmFYoqAq2bDA8w6/dB3xMLeQ/KANo+rV8tWs8y57zs6jhnNcrdTvEOZ8FH07wHecGjGfBOfvijEv9hmbESp60ku3fnKV/utn+yzqnN6YBPdYn7UOQzS/gx7qnByDZqKKlVS0bZDCwomjllJ2M5PJDFu8rR9uWJtnKkY9LV2fjp9MunJxo/ngb+xIt/BdKNTPzAZLV2S4NsWVIiHpcJUSYH57PCKmYUYniUfSjYe32yLeukZJyUxs/Hf/v63O0lGHiOT//uTTXSiTUFkgM1OYnqvl+15RxewQSzKHs/zajEaJtZ2ka2b2uaUytKazOSnXlNhgjoWRVgX544NET3DZ6ieCQlREgQjksRlxiVUEHTBTBt1GUQJ6ZwKTs1uHwKg9ZswusEWvejd+LYPWC4WWamKPxM1NRjEjTr5D3qgMHm0RrCkLpsRxOQJaBwhC8FpVRtAJ5PG+t5vD6XPrxMHhYjDwFLq8TdLchcZKPdBjfdSMr1MUiV0OimTLawAiVhJKLCJm1EEMYIxdwkXi9E7+RD9XywnvMfAJx3DYy3jS66CO4c7j8Ki85rLrSKoX5DSOghuFYfaCV4nogq5pXEAvBC7r9zO+ffz/pvZf17gPgMxDmhk7fIsEEB/Yh66Ji8902J8B2do8uHnneYznnRNoe9H3exwk7eeMRwNaD/wKlcGBGWdcwioKSMCs/hpkEEZtjAFq+gxc1riWh7snbe1ZGLywh7Qc+cgwcXdYz3VQPLEuoy68xif9Pl7iPlztdL/wB1/iiJ0ZJOMgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Guia do dev Autodidata"
+        title="Guia do dev Autodidata"
+        src="/static/c3a89b79086cf222de62d5dd43b5dc91/799d3/manual.png"
+        srcset="/static/c3a89b79086cf222de62d5dd43b5dc91/00d96/manual.png 148w,
+/static/c3a89b79086cf222de62d5dd43b5dc91/0b23c/manual.png 295w,
+/static/c3a89b79086cf222de62d5dd43b5dc91/799d3/manual.png 590w,
+/static/c3a89b79086cf222de62d5dd43b5dc91/2a3d6/manual.png 885w,
+/static/c3a89b79086cf222de62d5dd43b5dc91/c81eb/manual.png 970w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        loading="lazy"
+      />
+    </span></a></p>
+<p>Você definitivamente não precisa de <strong>bootcamps CARÍSSIMOS</strong> para se tornar um bom programador…</p>
+<p>Todo mundo imagina que uma carreira se inicia num curso superior, é o pensamento padrão. Mas na área de programação é diferente, estamos num momento que as empresas estão completamente desesperadas atrás de bons programadores, e elas não os encontram. </p>
+<p>Os programadores disponíveis no mercado são disputados brutalmente entre elas, acredite. Eu já formei diversas equipes de desenvolvedores para consultorias e startups, e sei exatamente o quão difícil é estar do lado da empresa.</p>
+<p>Já ofereci vagas de R$ 8.000,00 CLT para desenvolvedores plenos que tivessem conhecimentos específicos de Javascript, e demorei muito tempo para encontrar, e os devs que encontrei não tinham exatamente o fit para a vaga; outras vagas de R$9.900,00 CLT para sêniores tinham exatamente o mesmo problema.</p>
+<p>Tendo em vista essa dificuldade decidi focar a minha vida em ceder este conhecimento, pois: </p>
+<ul>
+<li>Sei exatamente o que as empresas precisam;</li>
+<li>Sei exatamente como formar um programador para estas vagas que citei com cursos gratuitos na internet, e falarei tudo sem economizar nadinha nos nossos conteúdos;</li>
+<li>Em 3 anos de muita prática e trabalho duro, com os conhecimentos que te passarei aqui você estará apto para vagas de R$ 6.000,00 se você se aplicar verdadeiramente, sem a necessidade de um diploma de ensino superior.</li>
+<li>Você vai ter o conhecimento que adquiri durante mais de 10 anos da minha carreira de programação.</li>
+</ul>
+<p>Atualmente a internet está inundada de informações, <strong><em>o problema não é a falta de disponibilidade</em></strong>, mas a filtragem do que é bom e ruim destes conteúdos. Qualquer tonto pode pegar uma câmera e falar um monte de abobrinha no YouTube, e isso gera dificuldade para separarmos o joio do trigo.</p>
+<p>Este problema eu resolvi para você. Todos os conteúdos que disponho em tudo o que a Reativa faz, passaram pelo meu filtro pessoal, tudo foi testado e aprovado por dezenas de programadores que conheço. Se você tem interesse em ter conteúdos para se tornar Sênior o mais rápido o possível, <a href="http://bit.ly/form-reativa">clique aqui que vou te mandar todas as informações</a>.</p>
+<p>Muito se fala dos sucessos da carreira, mas pouco se fala do fracasso e das perdas de tempo que tivemos com coisas inúteis. O ensino superior é um desses tabus.</p>
+<p>Para exemplificar: </p>
+<p>Existe um conceito em startups chamado <strong><em>MVP</em></strong>, que consiste em criar um mínimo produto viável. Você lança algo incompleto no mercado, verifica se vai dar certo ou não, e só depois de testar o mercado e fazer dar certo que você investe dinheiro e cria o produto de verdade, o objetivo é <strong><em>errar barato</em></strong> e <strong><em>corrigir o mais rápido o possível</em></strong>.</p>
+<p>Tanto na vida quanto nos negócios, <strong><em>errar não é algo que você escolhe</em></strong>, é algo que <strong><em>acontece</em></strong>, e é a parte que eu considero mais importante do processo.</p>
+<p>Se você tiver que escolher entre errar ou acertar escolha sempre por ERRAR. Cada erro que você comete te deixa mais próximo, e mais consciente, do sucesso. Não devemos evitar os erros, pelo contrário, temos que nos expôr e estarmos sempre atentos a corrigir, mudar de rumo e acertar o mais rápido o possível.</p>
+<blockquote>
+<p><strong><em>O ensino superior não te deixa errar pequeno</em></strong>, te coloca em um relacionamento abusivo de 5 anos pra você descobrir que aquela merda de profissão não era a sua paixão.</p>
+</blockquote>
+<p>No mundo do ensino superior as pessoas cometem o mesmo erro de quem investe milhões e criam um produto que fracassa, você realmente precisa investir 50 mil reais, gastar mais de 6 anos da sua vida pra descobrir que determinada área não é o que você gosta, ou que não tem vaga de emprego? presenciei pessoalmente dezenas de amigos e familiares estarem desempregados e com um diploma de engenharia de produção na parede.</p>
+<p>Você pode até discordar de mim em alguns pontos, eu não ligo, pois essa é só uma outra visão da realidade. Mas você NÃO precisa passar por essas humilhações pra entrar no ensino superior pra ter a falsa sensação de sucesso, porque acredite, existem outras alternativas.</p>
+<p>A história do João, um de meus colegas de trabalho, detalha bem como funciona fazer uma faculdade de TI e como ela nos prepara para o mercado de trabalho.</p>
+<h1>A história da uniesquina</h1>
+<p>João estava puto esses dias, falando do arrependimento de diversas escolhas que tomou na carreira como desenvolvedor, e que ninguém - inclusive os professores da uniesquina que ele estudou - o avisaram. Tudo começou quando o João pegou um super-desconto em um desses sites quaisquer de bolsa de faculdade, a mensalidade da engenharia da computação caiu de R$ 1.500 para R$ 850. JOÃO ESTAVA FELIZASSO.</p>
+<p>No início foi pura alegria, ambiente novo, pessoas novas, tudo ia bem. Mas João começou a reparar que a faculdade não era nada objetiva; ele já estava quase no terceiro ano e ainda não tinha aprendido quase nada de programação, ele tinha aprendido o básico de algoritmos mas metade da aula o professor usava pra falar da vida pessoal e mostrar fotos do filho que acabara de nascer.</p>
+<p>Era engraçado, que os professores eram super sacanas, ensinavam um conteúdo X e quando chegava na prova o cobravam coisas absurdamente diferentes dos conteúdos ensinados em aula. Era muito perceptível que o objetivo do professor era mais o de encher linguiça e sentir superior aos alunos do que ensinar de verdade o que o mercado precisava. Salvo por raras exceções de bons professores que sabiam que falavam, mas a maioria só tinham lido o conteúdo da aula em um livro e replicado sem ter conhecimento prático algum.</p>
+<p>Os colegas da sala faziam perguntas idiotas e redundantes, a falta de sono fazia o João querer agredir esses amiguinhos, os conflitos também aconteciam quando era necessário fazer os trabalhos em grupo:</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 560px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/437ccf5c977f4c9c90ef4cf6f94a614d/25733/briga.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.107142857142854%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAAChUlEQVQozx2R20+SARjGvy6qi6I0dc5QzEyTg2iCIipJihAqGnaYmmYHZ1OrtdW6rtXa7K7jsi0Rj9UUO5BmQfBhZpupqBDavOg/+fXJxbPnfd7f9mzvXsFcfZa6ugtUVp6hwuSkosKJpboZq60Vo7EBu72dk/Y2So0OLDXNOJuu0NTUib22nePm0xJr50TVORoaL1Pv6EDQaK1YJWhzXKDK1ozF1kJZpZP6U5eoq7+I2XwOjbaGXKWZPHUVmgJrPCulWampRq21xNkxfS1FxXUI8sxj6HJMNKqa6HbcpOfUTS7burl++jYnTI2oVOXI5VoUikIyMgpIT5ckeUZGYdy3tc3SDmpISc1DUGRmcUiWQEu+CZ/bizj+heDYZ0JvZ3n1/CWDLhejw8O4B10MuQdxDQzEZ9fAa0ZHhnC7XQwPDfJ2fAxjqQ4hPS2ThKQ96A35uN6M4Bp381X0M7e4wO/VZcLRNVajEVbWV9nc/MvGxibRaJRIJML6eoylpQjhcEza/aXyuBkh5aAcmyyXh4pGft17z2Kfl6VH0/x7tsDW0xBbT0L8e7pA4O47CgrUaCUZDDrKy8tobTPQ1avj6nUdbR1FmC1JUqE8nZaUEt7ob/Dz0Sfmn3jx900QfuEn0i+y1h8g8jJI4PEUXV2dXOvtkYpVCIJAarJA3pEdaFU7yTm8C61ahpCcJse0W0Gf8jyTng94v03zccaLby7A93mpaF6UXMT/IyidFib2J8aDB/cpKy+hxlpD1uFs9spkJB5IZH/CPoTi4lL0unxanA48Ex48k5NMeTzMfJ5mdmYW/zcfYlBkTgzh8/kIBAIEpRyS8sryCnfu3JI+nYJSlU3u0Sz+A+Ivlwhil6WWAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="briga"
+        title="briga"
+        src="/static/437ccf5c977f4c9c90ef4cf6f94a614d/25733/briga.png"
+        srcset="/static/437ccf5c977f4c9c90ef4cf6f94a614d/00d96/briga.png 148w,
+/static/437ccf5c977f4c9c90ef4cf6f94a614d/0b23c/briga.png 295w,
+/static/437ccf5c977f4c9c90ef4cf6f94a614d/25733/briga.png 560w"
+        sizes="(max-width: 560px) 100vw, 560px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Ele se sentia cada dia mais desmotivado, isso acabou levando João ao bar próximo da faculdade, o Gela-Guela. Os encontros no Gela-Guela ficavam cada vez mais frequentes do que a ida às aulas, ele estava mais motivado com a bebedeira e com as festas da faculdade do que com as matérias que <strong><em>só o faziam perder tempo</em></strong>.</p>
+<p>A faculdade começava a ser levada com a barriga, copiava a prova dos amigos, assinava a lista de presença e metia fuga da aula. Qualquer coisa era mais empolgante do que estudar sociologia e português, matérias que por incrível que pareça compunham a grade de aulas, parecia surreal estudar aquela merda, quando a faculdade da qual ele tinha se inscrito era de computação.</p>
+<p>Após a reclamação de diversos alunos sobre as matérias irrelevantes, o boçal do diretor da faculdade dizia ser importante estudar matérias não correlacionadas ao curso pois isso o faria ser um profissional melhor, o fato é que no espaço limitado de tempo, <strong><em>João acabou terminando a faculdade sem aprender programação</em></strong> da forma certa.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 400px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7e2299b9b004a656e43391e470d72aa8/28275/otario.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.49999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIDBAX/xAAXAQADAQAAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHSV3RTIzSf/8QAGxAAAgIDAQAAAAAAAAAAAAAAAQIDEwAREiL/2gAIAQEAAQUCCrX43MAHSRQlqY56P//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABYRAQEBAAAAAAAAAAAAAAAAAAEAMf/aAAgBAgEBPwFIy//EABgQAQEBAQEAAAAAAAAAAAAAAAEAIRAx/9oACAEBAAY/AheZAt7bf//EABsQAAICAwEAAAAAAAAAAAAAAAERACFBYXHh/9oACAEBAAE/IQRlnTiHw4pCgsS+ANQoq3IcZJlYn//aAAwDAQACAAMAAAAQSN//xAAWEQEBAQAAAAAAAAAAAAAAAAABADH/2gAIAQMBAT8QGdv/xAAXEQEBAQEAAAAAAAAAAAAAAAABEQAh/9oACAECAQE/EKN7rQ7/xAAZEAEBAQEBAQAAAAAAAAAAAAABEQAhQdH/2gAIAQEAAT8QICA1KL3EJ84j8sToizjL4AiVxureTlUuMIYFEN//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="otario"
+        title="otario"
+        src="/static/7e2299b9b004a656e43391e470d72aa8/28275/otario.jpg"
+        srcset="/static/7e2299b9b004a656e43391e470d72aa8/7237a/otario.jpg 148w,
+/static/7e2299b9b004a656e43391e470d72aa8/0cfdf/otario.jpg 295w,
+/static/7e2299b9b004a656e43391e470d72aa8/28275/otario.jpg 400w"
+        sizes="(max-width: 400px) 100vw, 400px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>É comum nas faculdades terem aulas de sociologia e português por exemplo, não faz sentido algum, eles querem preencher lacunas que ficaram de seu ensino básico, algo que teoricamente deveria ser aprendido num curso fora de lá. <strong><em>Você se forma sem saber programar</em></strong>, mas vai entender o “comportamento humano em função do meio e os processos que interligam os indivíduos em associações, grupos e instituições”. Bizarro, mas acontece na maioria dos cursos do ensino superior. </p>
+<p>Sendo pragmático, vão abordar um monte de matéria merda e <strong><em>se você não for esperto e autodidata vai ser bem difícil ser um bom programador</em></strong> e conseguir um emprego bom.</p>
+<p>Se você duvida do que estou falando pergunte pra qualquer pessoa que você conheça que tenha finalizado algum curso superior e efetivamente trabalhe na área de atuação:</p>
+<blockquote>
+<p>Qual a porcentagem do que ela aprendeu na faculdade que ela efetivamente usa na vida real? </p>
+</blockquote>
+<p><strong><em>Você vai se surpreender com as respostas.</em></strong></p>
+<p>Voltando ao João, ao procurar as vagas no mercado de trabalho, ele descobriu que <strong><em>não tinha 5% do que era requerido pelo mercado de trabalho</em></strong>, e o mais cômico é que em nenhum deles era necessário ter conhecimentos de sociologia.</p>
+<p>João estava:</p>
+<ul>
+<li>R$ 51 mil reais mais pobre, decorrente das mensalidades que pagou, sem nem contar os custos de transporte e de horas de vida perdidas;</li>
+<li>Desgastado emocionalmente;</li>
+<li>Sem dinheiro;</li>
+<li>Sem os conhecimentos necessários para arrumar um bom emprego:</li>
+<li>João estava na bosta.</li>
+</ul>
+<blockquote>
+<p>Essa história pode parecer exagerada, mas infelizmente se repete todos os anos, com milhares de pessoas que são mentoradas por essas merdas de faculdade.</p>
+</blockquote>
+<p>Por professores que jamais colocaram um software de verdade em produção, que jamais tiveram que resolver um problema grave em um sistema que a cada minuto fora do ar fazia o cliente perder milhões de reais, que jamais realizaram nada no mundo real além de lerem alguns livrinhos, repetirem umas baboseiras e se sentirem super-heróis do conhecimento.</p>
+<p>Mais uma vez, existem exceções tantos nas instituições quanto no perfil de professores, mas quando existem são raríssimas de se encontrar e/ou caríssimas de se pagar. Posso discorrer por horas falando mal das faculdades, mas por ora, sendo objetivo, posso dizer que:</p>
+<blockquote>
+<p>O principal pecado das faculdades é a falta de objetividade.</p>
+</blockquote>
+<p>Não tenho ódio pelas instituições de ensino superior, tampouco pelos professores envolvidos, sei que eles fazem o seu melhor. Acho importantíssimo o trabalho deles existirem e de oferecerem educação a quantidades astronômicas de pessoas. Pode parecer pretenção da minha parte em ter sido tão duro ao longo do texto, mas a minha raiva é pela ineficiência do sistema em criar bons programadores para o mercado, quando esse tinha que ser o único objetivo destas instituições.</p>
+<blockquote>
+<p>Ao invés de focar na reclamação eu foquei em construir, gerar valor e ceder todo o meu conhecimento aqui nos conteúdos da Reativa, para que você fique consciente do problema e não perca tempo com caminhos que te levam para mais longe do seu potencial máximo.</p>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3392a95c6c8a84486bb1af28ffef3819/26df7/devo_fazer_faculdade_2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.25%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAIAAADwazoUAAAACXBIWXMAAAsSAAALEgHS3X78AAACkElEQVQoz2NQVtIyM7XzdPUPD4rMTskszy2oKCxuqak6sHX1/39//v//t3vDipLsvMykzPioxLDASA8XX2tLJx0tIzlZVQYdbWMHW/cA7+DkuJTs1Kzi7NzasvI5k3q+fnj5Hwy+vH/V39acl5YTFxkfGhAe6B3qYOdmbGSlqqLDYKhv7mTvEewXFhYYListb2JgWpybN6G95fyxPWCb/144tqe5pjolNtlAz0hMTNLZ3t3Bzt3M1FZTw4BBX9/MwdYtxC/C3tqBk4NHWEjKQN8sKzlt2ewp///++v//z9LZUxOjEgz0zERFpDk5eQ30TZ0cPExNbDTVDRi0NAwtLRw8nH0ig6O9PfwCfYM93Xy9XH0Xzpjy59ePv39+ARkeLj5uzl4ezt4O1i5uzj4W5vZ6OqZqKroMwAADmmpn4+Lh7BvkExoTHhsVGg0Mwsldnf///gY6e3JPp7mpnb9XkIerP9C3JibW2lpGQA8rKmgwyMqoaKrpmxrb2Fg5O9q5+3oEebn5iYvJ9bQ2X7t8CYh629vExeTtbV2tLBz09Mz0dE2B2uTl1EChLS4mqyCvDvS9kaGltaUjMPDsbVyZmTgaa6pzs/OSElIaq2tYmDkMDcyB2jTU9dXV9IA6gVZKiMsziAhLy8qqqKnqAoPdytLR3tbN1dHLysy+tqxsam9XU03F9L5uY31LYKACvaqvZ6aqrC0jrSwpIS8sJMkgKiKjoKABjHSgnLO9p59HUHRYTFxkQndz48ze1rkT2vasWxwXER/kE+bp6mdj7WwA1i8lqSgkKMEgKCAuKaEADDagq2ytnb1c/UIDIoDBVpSdV5iVk5eRXZyTHxkc5eniCwwRU2NrTXV9oG+BVvLziQAAKaHZft/va+0AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="devo fazer faculdade 2"
+        title="devo fazer faculdade 2"
+        src="/static/3392a95c6c8a84486bb1af28ffef3819/799d3/devo_fazer_faculdade_2.png"
+        srcset="/static/3392a95c6c8a84486bb1af28ffef3819/00d96/devo_fazer_faculdade_2.png 148w,
+/static/3392a95c6c8a84486bb1af28ffef3819/0b23c/devo_fazer_faculdade_2.png 295w,
+/static/3392a95c6c8a84486bb1af28ffef3819/799d3/devo_fazer_faculdade_2.png 590w,
+/static/3392a95c6c8a84486bb1af28ffef3819/2a3d6/devo_fazer_faculdade_2.png 885w,
+/static/3392a95c6c8a84486bb1af28ffef3819/26df7/devo_fazer_faculdade_2.png 1024w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Desde muito jovem, temos que tomar decisões que podem definir completamente o nosso futuro. Somos forçados a prestar um vestibular difícil ou estudar coisas que sequer sabemos o motivo. De certa forma não temos como saber o que o futuro nos reserva, mas podemos aprender com os erros dos outros e ficarmos consciente dos problemas antes mesmo deles acontecerem. </p>
+<blockquote>
+<p>Aprender com o erro alheio é a forma mais barata de se aprender.</p>
+</blockquote>
+<h2>O caso do nutricionista gordo</h2>
+<p>Diego gorducho era um outro camarada que conheci em um dos projetos que trabalhei. Tinha graves problemas de peso, afetando sua mobilidade a ponto de mal conseguir andar. Apesar disto, Diegão não conseguia conter os péssimos hábitos que mantinha, por sorte e pelo ambiente masculino-hostil que ele trabalhava, sempre tivera amigos que o fizeram bullying, uma ferramenta maldosa e que claramente não concordo, mas que o empurrou em direção ao combate suas fragilidades.</p>
+<p>Existe um conceito matemático chamado <a href="https://pt.wikipedia.org/wiki/Ponto_de_inflex%C3%A3o">ponto de inflexão</a>, que é um ponto sobre uma curva na qual a operação muda de sinal, indo do negativo ao positivo. <a href="https://www.amazon.com.br/Ponto-inflex%C3%A3o-Fl%C3%A1vio-Augusto-Silva/dp/8593156835">Flávio Augusto</a> a define como:</p>
+<p><em>as decisões que tem o poder de mudar o rumo e o roteiro de nossas vidas.</em></p>
+<p> <span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 590px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/896df1abe5dbf657d367de19a439cd4f/03058/inflexao.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60.66565809379728%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAA4klEQVQoz5WT2wqEMAxE+///KOqLPgje8H7LcgqRSHfVHYiNTTtm2tEdxyFgHEfR3I53obC547Hvu9R1HRA9gX2EJXWaTNMUFHlnflmWM+Z5PtdVVSXrul6acFayLlQwF0WRZFkmaZpKkiQSx7EMwyBt20rf94GigHDbNv9VgnfGruskz3NPxNEUReHntG6PKiC08sqy9JuRRpdN0/jOqEGEfPJbQgUkzL3FT8kAWVyGPR9qTxYKOiRHBtLe+PAb6cU2ahW1wr+4dEhXdKle+ye4fcbzT4FUydQybwObYSH2gg/8bLGODW4K3gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="inflexao"
+        title="inflexao"
+        src="/static/896df1abe5dbf657d367de19a439cd4f/799d3/inflexao.png"
+        srcset="/static/896df1abe5dbf657d367de19a439cd4f/00d96/inflexao.png 148w,
+/static/896df1abe5dbf657d367de19a439cd4f/0b23c/inflexao.png 295w,
+/static/896df1abe5dbf657d367de19a439cd4f/799d3/inflexao.png 590w,
+/static/896df1abe5dbf657d367de19a439cd4f/03058/inflexao.png 661w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Dentre as zoações e sacanagens, os amigos do Diego, falaram uma frase que soou bastante seca e dura mas mudou a vida dele para todo o sempre: <em>“Diegão, se você perde a batalha pra batata frita, com quem você empata?”</em></p>
+<p>Aquele foi um dos pontos de inflexão mais importantes da vida do nosso amigo, o fez mudar de hábitos e consequentemente o levou ao caminho do bem estar na vida. Sempre que fraquejava ele repetia o mantra: </p>
+<blockquote>
+<p>”<strong>Resignação</strong> para aceitar o que não pode ser mudado, <strong>Força de vontade</strong> para mudar aquilo que pode ser mudado e <strong>Sabedoria</strong> para distinguir uma coisa da outra”.</p>
+</blockquote>
+<p>Diego sabia que <strong><em>o caminho que o levava da virtude ao vício era muito menor que o caminho do vício a virtude</em></strong>, e foi uma das primeiras pessoas que eu presenciei que percebeu que não existiam fórmulas mágicas para o sucesso, além de <strong>trabalho duro</strong>, <strong>consistência</strong> e <strong>tempo</strong>. </p>
+<p>Filósofo e muito focado, chegou a tatuar em suas costas: </p>
+<blockquote>
+<p>“Procura satisfação de veres morrer os teus vícios antes de ti”</p>
+</blockquote>
+<p>Nunca senti tanto orgulho daquele, literal e carinhosamente, grande homem.</p>
+<p>Um dos fatos que me chamaram a atenção na história do Diegão, é que o início da batalha dele contra o peso ele foi até um profissional de reeducação alimentar, o nutricionista Lucas, que por um acaso estava tão acima do peso quanto ele. O que a princípio para as pessoas, pode invalidar o seu discurso somente por sua estética fora do padrão do que suas teorias de magreza pregam, que ocasiona questionamentos: “como ele quer que eu seja magro se ele também é gordo?”</p>
+<p>Isso abre margem para uma outra discussão, a do preconceito baseado na imagem, de seguir o padrão social imposto como “bonito”. Na história, Diego mudou porque ele estava morrendo, e não porque queria ser aceito pelos amigos.</p>
+<p>Existem casos, onde a obesidade ainda é pregada como forma de comportamento, como se as pessoas fossem gordas porque não têm vergonha na cara, não se esforçam e não se dedicam a emagrecer, entenda que não é esse o caso da história que acabei de contar, Diegão era obeso pelos hábitos ruins e não pelos fatores supracitados.</p>
+<blockquote>
+<p>O problema é quando tentam relativizar a preguiça em cima de qualquer discurso.</p>
+</blockquote>
+<p>A vida é muito mais complexa do que só ter força de vontade e resiliência, no caso do nutricionista gordo, podem existir inúmeras variáveis que o fazem estar acima do peso, metabolismo extremamente ruim, desequilíbrio emocional que necessita de acompanhamento psiquiátrico, genética desfavorável, temos que ser flexíveis em entender que a vida é bem mais complexa, pois, claramente existem casos onde a pessoa faz de tudo e ainda assim não consegue, <strong>a vida não é justa, e nem tão bonita quanto geral prega</strong>.</p>
+<blockquote>
+<p>O que temos em comum é que se algo é difícil, é difícil pra todo mundo, o que faz da história de Diego ser ainda mais admirável.</p>
+</blockquote>
+<p>O objeto da discussão é que a antifragilidade e capacidade de superação do nosso protagonista foram decisivas em mudar a vida dele, e que se você quiser, você tem que se esforçar muito e ainda correr o risco de não conseguir. Muita gente desiste só de ouvir o que acabei de dizer, se algo é difícil eles nem tentam, e essa é a magia! Se eles desistem sobra mais espaço para você chegar ao topo.</p>
+<p>Voltando ao nutri gordinho, isso me fez questionar, será que os resultados que as pessoas têm, são diretamente relacionados aos seus hábitos? <strong>Na maioria dos casos sim!</strong></p>
+<p>A sociedade é baseada em pré-conceber a relevância de opiniões baseado nos resultados, você ouviria conselhos:</p>
+<ul>
+<li>De um programador que usa windows? (brinks)</li>
+<li>De um dentista com o dente podre?</li>
+<li>De um psicólogo surtado agressor de mulheres?</li>
+<li>De um coach que dá conselhos de riqueza e vai embora de Pálio 1997?</li>
+</ul>
+<blockquote>
+<p>Então porque aceita na moralzinha pagar 50 mil reais para ficar ouvindo por 5 fucking anos baboseira de professor que nunca realizou nada no mundo real?</p>
+</blockquote>
+<h2>Os professores de palco</h2>
+<p>Você acha que os professores do curso de administração administram alguma coisa? Se você fosse ele, você iria escolher:</p>
+<div class="gatsby-highlight" data-language="text"><pre style="counter-reset: linenumber NaN" class="language-text line-numbers"><code class="language-text">(A)   Administrar uma empresa foda e ganhar milhões
+(B)   Dar aula numa faculdade e ganhar 7 mil no mês.</code><span aria-hidden="true" class="line-numbers-rows" style="white-space: normal; width: auto; left: 0;"><span></span><span></span></span></pre></div>
+<p>Acho bem improvável ser a opção B, eu nunca vi um empresário nível Flávio augusto dando aula Full Time numa uniesquina.</p>
+<p>Atente-se que não estou colocando <strong>TODOS</strong> os professores no mesmo barco, até porque <strong>a classe de professores é muito prejudicada</strong>, muitas vezes ganham salários baixos e são completamente capados por ordens vindas “de cima”, o problema é tão complexo quanto os que eu citei do metabolismo do nutri-fofo. Estou isolando <strong>apenas</strong> os professores que sacaneiam propositalmente por não se atualizarem, os que tem medo de inovar, os que não trasmitem o conhecimento com paixão, os que leram o último livro em 1989 e ainda mantém a mesma merda de aula para toda turma que vem e vai, aquele que tem PHd no currículo mas não sabe ligar um projetor. <strong>Lembrando também que o contexto do texto é isolado para a área de tecnologia, da qual eu presenciei pessoalmente.</strong></p>
+<p>Algo que sempre me intrigou nesses professores-de-palco é que se nem mesmo eles conseguiram lutar na selva do mercado, se escondendo atrás de empregos públicos e/ou que não exigem dificuldade e inovação a níveis extremos, como é que estarão aptos a opinar ou te mentorar para o processo da administração da vida real?</p>
+<p>É muito mais válido, rápido e barato, quebrar a cara por conta própria e ser responsivo aos problemas da vida do que ouvir conselhos de outras pessoas não realizadoras que te dão dicas genéricas e não práticas da vida.</p>
+<p>Foque em ouvir quem construiu algo de verdade, mas é bastante improvável que você vá ficar rodeado de bilionários e programadores se você mora em Pirangabinha do Bom Jesus por exemplo, é por isso que os livros e a internet o ajudarão a se rodear das pessoas que tem os mesmos objetivos que você. </p>
+<p>Por esse motivo <a href="https://reativa.dev/">a Reativa</a> existe, para unir as pessoas que tem interesse em crescer como profissional, ajudando os devs iniciantes a chegarem na <a href="http://bit.ly/form-reativa">senioridade no menor tempo o possível</a> usando apenas a internet e sua vontade em crescer na vida, aqui nós usamos a prática e a experimentação em primeiro lugar!</p>
+<p>Falando nisso, limitar a experimentação é outro pecado gravíssimo do ensino superior e da educação base como geral. A educação tradicional está falida, ensinamos as pessoas da mesma maneira durante os últimos 100 anos e, como crescemos nesse sistema, achamos que é normal, mas é uma loucura. É sério que passar 12 anos da vida sentado do mesmo modo que as crianças sentavam em 1920 é o melhor método?</p>
+<h2>Faculdade é perda de dinheiro?</h2>
+<p>Pensa comigo, analisando o modelo de negócios das faculdades, tanto públicas quanto privadas, faz muito sentido te manter o máximo de tempo o possível matriculado como aluno, as privadas para terem fluxo de caixa com as mensalidades pagas por você, as públicas para manterem o status quo e a necessidade de se ter os funcionários públicos.</p>
+<p>Talvez você já tenha reparado que desde o ensino básico na escola eles te ensinam um monte de baboseira, que você aprendia por um ouvido e soltava pelo outro, isso sempre aconteceu, e se perdura no ensino superior, até os dias de hoje. E nesse caso não é tanto culpa do professor, mas da estrutura de ensino existente, as ordens sempre vêm de cima e capam cada vez mais a capacidade do professor inovar.</p>
+<p>Você lembra das fórmulas matemáticas que você aprendeu na sétima série do ensino fundamental? Se eu te perguntasse então como fazer escalonamento de matrizes, ou que eu dissesse que dois segmentos nulos são sempre equipolentes na teoria dos vetores você concordaria? Você também explicaria de cabeça a diferença exata de anáfora e catáfora e quais são as regras dos usos de Pronomes relativos e conjunções?</p>
+<blockquote>
+<p><em>Tudo que você não pratica, você esquece.</em></p>
+</blockquote>
+<p>Do lado contrário, tudo que você <strong>pratica</strong> você <strong>detem</strong> o conhecimento. As regras gramaticais de linguagem ou a forma de fazer cálculos está implícita na sua cabeça, você não sabe exatamente a diferença das perguntas do parágrafo anterior, mas quando escreve uma redação ou faz uma conta, utiliza dos conhecimentos empíricos, mesmo sem saber toda a teoria ou nomes bonitos por trás delas.</p>
+<h2>Foque na prática</h2>
+<p>A média de tempo de uma faculdade de graduação varia entre <strong>3.600 à 4.000 horas</strong> , qual você acha que vale mais? 4000 horas programando, ou 4000 horas numa faculdade?</p>
+<p>Agora imagine que você tenha que escolher entre dois lutadores:</p>
+<p><strong>Lutador A:</strong></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 300px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4585478051d4c0134adc1bb4bd4d8689/8c2ab/lutador_a.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAAEy0lEQVQ4yw3QeUxaBwDH8Zcs25rNyOUDlEvAC3xPeAIq9wMeCAjihYhO6oFFBSmgMFAu71qtOrVr3R+NdrZpk1q71mStjW2XHdV1ts22mGW67sqyZM2ypFmW/beR/P74/vP55wdgJqZcTUYQAopSUCxPJCI0NnHaOhCkjAmz87LfepNFxynkDDoFR8w6AYJZShSukBYxWSCzAAS2ryWmJ90zZ+ujca2xtrBCRq+28lweg9OmmPe0iAsY+UU4WJjDoZFysk8wGTknT9p83hYOi1IC5QM7m5c8XU3T085zy11DcbsvUuXxKfoDrRPxgYveFkzA8YVd/qCHyyDnkbJLi9hFXDqvmAuX8mUKBSCWVhRDxUo53Nvrmp5KjQ6fmppqW984s7F+bm3Emwwl5hcnU+lwCZdOJWYpFZDWWFRtQxRoucNtAHAEXA4IZmfhoRJuJNEwu9i5vNr/7GDv1xevvv7s6Ojwn4MvX968flPAY1EIWQUFtGY7GvDZT7bo21tRgMOiFXI5XDYH4jMt1kKzleNsq7y//fCH7//++cW/Tx//8snd4/cW1unkLGL22wjM73A62h1NLmfGO4Aub+YenrOruLOvzN0n7jolenfA8ejW4+df/HT0zZ9fff7yo41Pb115yGUxTrzxukoKhXobogPdpz2dPR2tgNmJNzsIpmaCyU4wOnGYjTAy2HQ56d+cHV1PDV5dWl463R10YpCYwuHjCiG8QEpSYmxLjcReiwH6ZpKmjqSyEJRmorwaZzFB4/GewX7LxamxjeW19QubkdBpSP6aWEdEdAQBiodUeJ4MV1iRBVeBgK6eoq4FZTUkhY2EyPBWg8x3yhEJ9Ozc2ZuduLS2+mBh6apAl12hIwtRokBHFGiJAnVOGZpTqiYCyjpQbqUoa6kyM1kkorld9sFAdzTUd/j8j2f7L19899/W1lNYmytQE8vRjAcRlIyoKUIVOTNAbAJFJrLETBGqQZNWGg0PDAY8sYj/yf7v25uHB3t/3d7+VoSxIRUB0VHKMSqCUiUoQ6SmlavyAJEhV2SkCDAqX5jXYm8IhwN+rzsaDj05eHV76+jh3R/vfHxYaWLDOhKEgbCWDKNkEUaTYAwJxgRkdXRZHaMMpVZJ+J6ezqGh4IDPEwr6H+wcr13Yvn559/6j36S2Yp4Wz9OCfJQMaSiZgLFcRE8HVM1seS2nvKqgxmgIBv2pVDIRj0ai4XhvZ8RpCbq7oh3vyC1sCKNAOmopRoU0uUKMDmF5QgML0LRwK2uYqKqyz+tPpkfHx8dHR9PDiUTS64q2mgfcbRGrtNYGS4xsoY4B62llOla5Pl9sypeYuQDWUiLVc+0Ntlg8lUyNJRNjsdhwJBpL+j2h9sY+T3eoQWs1QJXGfKWFL6rmIHp2uYEjMXIrzAUAaoM0OonH402lp9LpiWRyLD6SHB4ZmRlLT4zE4on4TCLmdjU6XHpdowjBOBkpzHh9vrKhFFCZ4TZn29jk3Nz88uLSxYXFlXv3dq5fu3Zzc3N3d3d/f+/o+PjKxodbN260+5oyTGwuFFYXVtXw0HoIsNo0gcDQzOzS/ML5pZUPlldWz7+/On1mbnJqdm5hZebsot830N7e2d/baW6Vy+tKlY2QuqFMU1eG1sP/Axqgm340MTKpAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="lutador a"
+        title="lutador a"
+        src="/static/4585478051d4c0134adc1bb4bd4d8689/8c2ab/lutador_a.png"
+        srcset="/static/4585478051d4c0134adc1bb4bd4d8689/00d96/lutador_a.png 148w,
+/static/4585478051d4c0134adc1bb4bd4d8689/0b23c/lutador_a.png 295w,
+/static/4585478051d4c0134adc1bb4bd4d8689/8c2ab/lutador_a.png 300w"
+        sizes="(max-width: 300px) 100vw, 300px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Estudou 4000 horas em uma academia tradicional, 80% do tempo foi sentado numa cadeirinha ouvindo conselhos de outros lutadores que nunca lutaram de verdade, mas assistiram várias aulas de luta, viu um pouquinho de luta prática no curso, mas sem encostar no amiguinho, era só pra treinar as movimentações. Nunca lutou de verdade, mas tem um quadro bem bonito na parede do apartamento com móveis planejados, que diz que ele fez um curso de 4000 horas sobre lutas, uma uniesquina CERTIFICOU que ele sabe tudo sobre lutas. </p>
+<p><strong>Lutador B:</strong></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 307px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/78bb9db568f369e898f4e841cfc72bb0/0a064/lutador_b.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 95.43973941368078%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAIAAAAf7rriAAAACXBIWXMAAAsSAAALEgHS3X78AAAEXklEQVQ4y2VR2W4bBQBckGiRQKoq2hdUqihteSmlahuTkoQ4Se0cSp00RxvnUOIEJ45z+b7X1x72rned9drra+31+kqdOJdzYUoLpGmgLT3UFsQL8BfAY8HiASExD/Mw0mhGM8Bf/8Hr168r/Ocfv5d3d/PpTIbnX7149q/+fwCp5EY2s7W8Ut7c/Gpn55tyeX9iZPDY0SNH3njz3aNvnTp5PMuxv/z626uXPz5/9uLJ4+ePHz797sGTB/cff333EDDq/VZrEIKjGBajg1nQ6jl18gQ0Ilxyj/HG1tPHAEGN4GB/v1y+s75eWsoXUolcPJILUSnYRQOQO4KiLEnywWCWjReYUPZGqwgcrLtDDrvG6q5UvTM2JD08/H53Z7dUKhWLxTSfT7K5WDhLYiwAQzGPlyWJNBPMR8I5ll1jPHhY0bRpacwY2/QDl1azfPmLexsbpbW1jeVCkedy0TDH0CkfFgMQmMW83KI/Ewrmw0yeYQohmnOMtLtk12y9H6r6LvPJlVLp7trqduF28Xa+kGSzUSZNU5wHifxjxlIkmfZTWSqQo+k8vshpPx83Dwjl16on2s/aZ/qKLJXlcll+OZNejkV4JsARvgTkDgMeOFFJJsh0pbkP41BvEpqTDgvPtFyoGqo9gctrA9NXVq3CEimj3bMhPxUJZejFJOaNwu4QgHlSPpwniDSOcwgadzkpRN6h77ogb6jCBs6vWMT3/N0PI7d+XtF8yapDlv5FjAr4WchNgSABeFHOh6UJIoN64pXlXE4/prwRW2jn5hpWdfUr5sYnvOxlXvkoJisRg775ZlC7gGOs00YY9V7AgyS9aArHeBiOQmgUckBJQ0/C2sfZh9ds4m2k9YfU1KPkFKVs3MN6YHmNeaQedlI2C65TIwACJVA4iSLJitkFRxwm57JjMAHepM2yPaTrIHDzpyXlbWuzXPTBhvP6Ad2742hENAqbjTLoEAB2JyBXzGEPW20BiyOomtYsTratgN0p68i6Q5IxdcTV9XbpWe/YRX3b6QOy+1u8i5rrNOhxoxYF3K642xWz2xmzddFoJtQ9tcr2i9EFcVgpJMcb8IlaYuqT6JwAunXqs3PvZecFO3ZhVHHJMKPSa3AABBkQDIO2kNEcUCs1g03V451XCaUEk7cwqo4i1L+L9bPT5wZq3q652jYquhwYOsPPCGwTvRqtHzCZAxZL0GIJaHWkSV55+P3e+o/pmS5isgVRtKTB7oKtaVZ0XPDR+U8bJNdEUk1PXX7uinlYrFLhgMHgNxr9RhOlVUHoRK1YUC293ulbkBLzfficBJnt8iqEI63nxSKJSNQjbh00D7etmRp1Q83zswigUuNqNaacJ+2T/eqOky3Nku2tzb29XT6Vevrs+f0Hh/sHh/n80lapJJPN1gqanGPCZXvn5IBEMQUDOh2s1aJOk4PVX5dJmqXDGtgOM6iJdmq2MsEcAwUQw8K03GiwjY4qb3TdjDvHk86BeYWy0vdvu2pFwWxXFhMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="lutador b"
+        title="lutador b"
+        src="/static/78bb9db568f369e898f4e841cfc72bb0/0a064/lutador_b.png"
+        srcset="/static/78bb9db568f369e898f4e841cfc72bb0/00d96/lutador_b.png 148w,
+/static/78bb9db568f369e898f4e841cfc72bb0/0b23c/lutador_b.png 295w,
+/static/78bb9db568f369e898f4e841cfc72bb0/0a064/lutador_b.png 307w"
+        sizes="(max-width: 307px) 100vw, 307px"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>Criado pela vida, passou as 4000 horas brigando em porta de bar risca faca, já apanhou de paulada, de faca, já brigou com gente mais forte, apanhou de bando, foi em coma e voltou, quebrou o nariz 7 vezes, <strong>aprendeu tudo sozinho</strong> na marra, <strong>na prática</strong> , a mão parece uma pedra de tão dura de tanto soco que já deu em seus oponentes.</p>
+<p><strong>Você tem que escolher entre um dos dois para compor o seu time e te proteger na hora da treta, qual você escolhe?</strong></p>
+<p>Coloque o mesmo ceńario, um programador teórico de uniesquina, ou um programador forjado na prática, qual você acha que eu escolheria na posição para compor minha equipe? O autodidata brabão ou o engomadinho da uniesquina?</p>
+<blockquote>
+<p><em>Foque a sua vida em estudar essas 4.000 horas em coisas que sejam úteis de verdade.</em></p>
+</blockquote>
+<p>Lembro até hoje de um garoto que contratei, tinha uns 18 anos, era gamer, não tinha faculdade, me disse que tinha aprendido inglês aos 11 anos de idade sozinho, e que programação tinha sido a mesma coisa, somente lendo tutorial e fazendo tudo na prática. Adivinha se meus olhos não brilharam?</p>
+<p>Lembre-se disso:</p>
+<blockquote>
+<p><em>As empresas contratam potenciais. Eles são baratos, e a longo prazo o melhor investimento</em></p>
+</blockquote>
+<p>Se esse muleque me pedisse R$3000 de salário sem experiência, ainda assim eu o contrataria. Quem você conhece que aprendeu inglês aos 11 anos e programação sozinho? O problema é que a maioria não sabe o potencial de valor que eles representam ou sequer estão conscientes sobre estes problemas, de qualquer forma agora você sabe e ainda bem que eu estou aqui pra te ajudar.</p>
+<blockquote>
+<p>Então eu devo chutar o balde, abandonar a faculdade e investir somente em cursos online????</p>
+</blockquote>
+<h2>Antítese dos meus argumentos</h2>
+<p>O Fábio Akita é um dos desenvolvedores / empreendedores que eu mais respeito. Recomendo a todos que assistam os <a href="https://www.youtube.com/user/AkitaOnRails">vídeos</a> e <a href="https://www.akitaonrails.com/">blog posts</a> dele, a quantidade de conhecimentos que vocẽ absorver é absurdamente grande.</p>
+<p>Um vídeo do Akita em específico, fala sobre a importância das faculdades na visão dele:</p>
+<p><div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.49999999999999%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem" > <iframe src="https://www.youtube.com/embed/XWVcF7BoCSc?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style=" position: absolute; top: 0; left: 0; width: 100%; height: 100%; "></iframe> </div></p>
+<p>Eu recomendo que você assista, ele basicamente fala que a base que a faculdade te proporciona vai te fazer aprender melhor no futuro.</p>
+<p>Eu sou a favor de outra abordagem, o <a href="https://en.wikipedia.org/wiki/Pareto_principle">princípio de pareto</a> diz que 20% dos esforços são responsáveis por 80% dos resultados, eu acredito que você deve aprender as coisas por demanda:</p>
+<ul>
+<li>Entrar no mercado de trabalho no menor tempo o possível;</li>
+<li>Observar como as coisas funcionam; </li>
+<li>Focar em primeiro não morrer de fome, pra depois aprender conceitos mais profundos de computação;</li>
+</ul>
+<p>Sério mesmo que eu preciso aprender a fazer uma árvore binária recursiva e calcular complexidade assintótica de algoritmos e entender como funciona a estrutura de dados em grafo do GIT, antes de arrumar um emprego que vá pagar as minhas contas pra eu poder sobreviver?</p>
+<p>Para a minha realidade de fudido que se formou em escola pública de merda e não tinha chance alguma de passar em nenhum vestibular, queimar 4 anos de cursinho e mais 5 de faculdade não era uma opção.</p>
+<blockquote>
+<p>Se a microlins tivesse um vestibular eu não passaria.</p>
+</blockquote>
+<p>Cada um tem uma prioridade, as coisas que ensinam na faculdade são importantes em algum momento da carreira, mas não é no momento que você está passando fome e trabalhando de telemarketing pra conseguir pagar o ônibus e uma coxinha com guaraná para sobreviver.</p>
+<p>Outro vídeo recomendadíssimo é do <a href="https://www.youtube.com/channel/UClFbl7Rh9N17nTT1ppWn2MQ">Neto Marin</a>, que fala com muita elegância e abrangência o assunto: </p>
+<p><div class="gatsby-resp-iframe-wrapper" style="padding-bottom: 56.49999999999999%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem" > <iframe src="https://www.youtube.com/embed/t0TkXuxGjqg?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style=" position: absolute; top: 0; left: 0; width: 100%; height: 100%; "></iframe> </div></p>
+<p>Se quiser ir devagar e pelo caminho dito como seguro e conservador, te dou toda a coragem para passar 3 anos de cursinho e mais 5 de faculdade. Vá feliz pintar a cara no trote e pensar que esse é o momento mais importante da sua vida. </p>
+<p>Mas se quiser encarar a realidade e ir pelo caminho mais efetivo e mais turbinado o possível, venha com a gente. Na sua vida é sempre você mesmo que faz conscientemente as decisões, e te desejo sucesso em ambos os casos.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAACwUlEQVQ4y42UWU8UQRDHefFjGL+Arz6aKIlHMOFNXiSBqFEw0ZiIbtCAIYTIIYeGQ1dwOeKycigQD1DX5QwJEoSNirLdPdPbMz3dM73LqfFNaxjDrhiBpDLpY37dVf+q6gxKyM6mx4i2af9uZeyEIWKa2FlB9jKCr2FgHe8NBtISeH6UhnxWoFB2+0R0knKBYX1HGLuucguHHxt3j6mX98yxIBuq5jAeDzLOU/x2GGIj3wiL4+iUXpWpYlEtsY6cZaTW0OcZvTpTLc5qjBHP/xQMc8DgYIMRiLC/zBqo4M4qwova3FtKNaLWUc8ta6iGS4X1WBoMJFhyA828iFcdSUTaje4b1vuAYUn3rECBbDsvl3+ikWYz5BN2AmkpGJO45k4GK83qoyroE71l1mgn67oqkt8R/kqEg1vPyoE7PFhkjTQbMPXCzvCuNQziz7P9efLTtP4xTOtPKRjUgELdDKKN6/ADrjycqDup4hr27nNhLyVTfaz1nNz4FYNoQef+Mg5SQ7T1WarrioCBWkXPynlfqQXibRWMC4MbIy1mQ7YKB9jzCt5bakFVRNrZu0eGwfDTYqvljC0TaLTT6LwshIP0FIwJo+TLB32wivfctK4dWJnqZYEC0Zxjh9sM2IVU+fPlRIhND7D2QilV2s1e9YKqkz2s8bTzutF802KCvCAVhKNtbkU6WG8Jf3Xf7LvNZeJvGCbgecclWXIwGbgoyw8lF8YpKESWiAdDYYHDTTmOt75V4X/yDKnSlsjsMJ0L09rjCtQCxost+QMBeX3/CpSHsHF6e6WKBPIBANQGpHq4yRQKw4qGSKjYurBvLVgkIAvpXbG9POHUphy7Idvx59sPc+0HuXZdlqo9ocaeMCDhIPrfloTLqcvPR+jCGI1O6NFxHdoAZIOuhrLf5TFwldCIaeAtY3G3sbe9AXt6SXa133dG1a0ljAUNAAAAAElFTkSuQmCC" alt="Reativa" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/d2742f2dddd737dec60ee2a5226edb06/000d3/icon.png 1x,
+/static/d2742f2dddd737dec60ee2a5226edb06/bc2a0/icon.png 1.5x,
+/static/d2742f2dddd737dec60ee2a5226edb06/89cf4/icon.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/d2742f2dddd737dec60ee2a5226edb06/000d3/icon.png 1x,
+/static/d2742f2dddd737dec60ee2a5226edb06/bc2a0/icon.png 1.5x,
+/static/d2742f2dddd737dec60ee2a5226edb06/89cf4/icon.png 2x" src="/static/d2742f2dddd737dec60ee2a5226edb06/000d3/icon.png" alt="Reativa" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p><strong>Se você quiser dar o proximo passo para ser um dev profissional, eu posso te mentorar!</strong> <!-- --> <a href="http://bit.ly/mentoria-pauloluan" target="_blank" rel="noopener noreferrer">é só você clicar aqui.</a> </p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/empresas-desesperadas/">← <!-- -->As empresas estão desesperadas por programadores</a></li><li><a rel="next" href="/como-ganhar-10mil-por-mes/">Como ganhar R$ 10 mil por mês<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2021<!-- -->, Sua melhor escolha para aprender programação:<!-- --> <a href="https://reativa.dev">Reativa Tecnologia</a></footer></div></div></div><script src="https://platform.twitter.com/widgets.js"></script><script src="https://www.instagram.com/embed.js"></script><script src="https://embedr.flickr.com/assets/client-code.js"></script><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-155080700-5', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/devo-fazer-faculdade-parte1/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-320a3e4b66b1132d097e.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-d38956d7c90802b9085d.js"],"component---src-pages-404-js":["/component---src-pages-404-js-ba8fab707f547b8d2140.js"],"component---src-pages-index-js":["/component---src-pages-index-js-511e09b2f0f1386b8494.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-js-d38956d7c90802b9085d.js" async=""></script><script src="/commons-687338892083191c755b.js" async=""></script><script src="/app-320a3e4b66b1132d097e.js" async=""></script><script src="/netlify-identity-widget-71f3202b04975b5e224a.js" async=""></script><script src="/styles-989bb08664f2608f37ec.js" async=""></script><script src="/webpack-runtime-b210fad69d5bdcf9f091.js" async=""></script></body></html>
